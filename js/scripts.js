@@ -24,7 +24,7 @@ $(document).ready(function(){
   $('button#start').click(function (){
     $('#cloud-form').show();
     $('button#start').hide();
-    $('#cloud-result').hide();
+    $('#result').hide();
     $('#number').val('');
     $('#name').val('');
   });
@@ -34,7 +34,7 @@ $(document).ready(function(){
     console.log("Here");
     $('#result').empty();
     $('#cloud-form').hide();
-    $('#cloud-result').show();
+    $('#result').show();
     $('button#start').show();
     
     const number = $('#number').val();

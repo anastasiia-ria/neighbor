@@ -11,18 +11,17 @@ body {
   color: #c2e7fa;
 }
 
+.container {
+  width: 900px;
+  margin: auto;
+  position: relative;
+  height: 100vh;
+}
+
 #cloud-form {
   display: none;
   max-width: 500px;
-}
-
-#cloud-result {
-  display: none;
-  float:right;
-  margin-top: 20px;
-  padding:50px;
-  min-width: 100px;
-  padding: 50px 150px;
+  padding: 100px 200px 75px;
 }
 
 .left {
@@ -37,8 +36,6 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 200px 75px;
-  z-index: 2;
 }
 
 .shake {
@@ -64,7 +61,7 @@ input {
   margin: 15px auto;
   padding: 10px;
   background-color:#c2e7fa;;
-  border: 2px solid #D9E8ED;
+  border: 2px solid white;
   border-radius: 5px;
   color: white;
 }
@@ -87,21 +84,26 @@ button:hover {
   border: 2px solid white;
 }
 
-#result {
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 300px;
+#start {
+  margin: 50px;
 }
 
+#result {
+  display: none;
+  float:right;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px 20px 0 0;
+  width: 370px;
+  padding: 0 10px;
+  z-index: 1;
+}
 
 #result li {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-image: url('../img/cloud.png');
   background-size: contain;
   background-position: center;
@@ -111,10 +113,37 @@ button:hover {
   list-style:none;
   animation: cloud 4s linear;
   background-image:none;
-  border: #D9E8ED 1px solid;
-  border-radius: 10px;
 }
 
+
+
+
+
+#neighbor {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  bottom: 90px;
+  cursor: pointer;
+}
+
+#neighbor:hover {
+  animation: shake 1.5s infinite;
+}
+
+#attribution {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+#attribution a {
+  color: #D9E8ED; 
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* Animations */
 @keyframes cloud {
   from {
     position: absolute;
@@ -124,11 +153,12 @@ button:hover {
     height: 110px;
     border: none;
     background-image: url('../img/cloud.png');
+    z-index: -1;
   }
 
   to {
-    left: 100vw;
-    bottom: 125vh;
+    left: 90%;
+    bottom: 105vh;
     background-image:none;
   }
 }
@@ -153,23 +183,4 @@ button:hover {
   100% {
     transform: translate(-1px, 0);
   }
-}
-
-#neighbor {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  bottom: 90px;
-}
-
-#attribution {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-}
-
-#attribution a {
-  color: #D9E8ED; 
-  text-decoration: none;
-  font-size: 10px;
 }
