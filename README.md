@@ -35,6 +35,49 @@ Mr. Roboger's Neighborhood application takes a number from a user and returns a 
 
       Open "neighborhood" folder on your desktop and open "index.html" file in your browser.
 
+## Specifications
+
+Describe: beepBoop()
+
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Code: beepBoop(0);
+Expected Output: 0
+
+Test: "It should return "Beep!" if the number 1 is inputted"
+Code: beepBoop(1);
+Expected Output: "Beep!"
+
+Test: "It should return "Boop!" if the number 2 is inputted"
+Code: beepBoop(2);
+Expected Output: "Boop!"
+
+Test: "It should return "Won't you be my neighbor?" if the number 3 is inputted"
+Code: beepBoop(3);
+Expected Output: "Won't you be my neighbor?"
+
+Test: "It should return "Beep!" if inputted number contains 1"
+Code: beepBoop(51);
+Expected Output: "Beep!"
+
+Test: "It should return "Boop!" if inputted number contains 2"
+Code: beepBoop(52);
+Expected Output: "Boop!"
+
+Test: "It should return "Won't you be my neighbor?" if inputted number contains 3"
+Code: beepBoop(53);
+Expected Output: "Won't you be my neighbor?"
+
+Test: "It should return "Won't you be my neighbor?" if the number 13 is inputted"
+Code: beepBoop(13);
+Expected Output: "Won't you be my neighbor?"
+
+Test: "It should return "Boop!" if the number 21 is inputted"
+Code: beepBoop(21);
+Expected Output: "Boop!"
+
+Test: "It should return "Won't you be my neighbor?" if the number 32 is inputted"
+Code: beepBoop(13);
+Expected Output: "Won't you be my neighbor?"
 ## Game Instructions
 
 1. 
