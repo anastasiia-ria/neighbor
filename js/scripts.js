@@ -18,3 +18,19 @@ function beepBoop(input) {
 
   return array;
 }
+
+//UI Logic
+$(document).ready(function(){
+  $('form#form').submit(function(event) {
+    event.preventDefault();
+    console.log("Here");
+    $('#result').empty();
+
+    const number = $('#number').val();
+    beepBoop(number).forEach(function(number, index) {
+      setTimeout(function(){
+        $('ul#result').append('<li class="cloud">' + number + '</li>');
+      }, index * 1000);
+    });
+  });
+})

@@ -10,7 +10,7 @@ body {
   color: #c2e7fa;
 }
 
-.container {
+.cloud {
   max-width: 500px;
   margin: auto;
   text-align: center;
@@ -47,4 +47,54 @@ button:hover {
   background-color:#c2e7fa;;
   color: white;
   border: 2px solid white;
+}
+
+#result {
+  padding: 0;
+  position: relative;
+
+  /*animation: cloud 10s infinite linear;*/
+}
+
+
+#result li {
+  list-style:none;
+  width:200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  padding: 0;
+  animation: cloud-up 5s linear;
+  position: absolute;
+}
+
+@keyframes cloud {
+  from {
+    margin-right: 100vw;
+    right: 0;
+  }
+
+  to {
+    margin-right: inherit;
+    right: inherit;
+    left: 100vw;
+  }
+}
+
+@keyframes cloud-up {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+
+  90% {
+    left: 75vw;
+    bottom: 200px;
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
