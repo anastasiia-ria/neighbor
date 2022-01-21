@@ -1,12 +1,12 @@
 // Business Logic
 
-function beepBoop(input) {
+function beepBoop(input, name) {
 	let number = parseInt(input);
   const array = [];
 
   for (let i = 0; i <= number; i++) {
     if (i.toString().includes(3)) {
-      array.push("Won't you be my neighbor?");
+      array.push("Won't you be my neighbor, " + name + "?");
     } else if (i.toString().includes(2)) {
       array.push("Boop!");
     } else if (i.toString().includes(1)) {

@@ -2,7 +2,7 @@ body {
   height: 100vh;
   width: 100%;
   background-image: url('../img/neighborhood.jpg');
-  background-size: contain;
+  background-size: auto 750px;
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #c2e7fa;
@@ -25,7 +25,7 @@ body {
 
 .cloud {
   text-align: center;
-  background-image: url('../img/cloud2.png');
+  background-image: url('../img/cloud.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,9 +34,18 @@ body {
   z-index: 2;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group {
+  width: 250px;
+}
+
 input{
   display: block;
-  width: 200px;
   margin: 15px auto;
   padding: 10px;
   background-color:#c2e7fa;;
@@ -46,6 +55,7 @@ input{
 }
 
 button {
+  display: block;
   padding: 10px 20px;
   background-color:white;;
   border: 2px solid #c2e7fa;
@@ -82,14 +92,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/cloud2.png');
+  background-image: url('../img/cloud.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   padding: 5px 10px;
   margin: 2px;
   list-style:none;
-  animation: cloud 3s linear;
+  animation: cloud 4s linear;
   background-image:none;
   border: #D9E8ED 1px solid;
   border-radius: 10px;
@@ -98,12 +108,12 @@ button:hover {
 @keyframes cloud {
   from {
     position: absolute;
-    bottom: 50px;
-    left: 0;
+    bottom: 225px;
+    left: 20px;
     width:200px;
     height: 110px;
     border: none;
-    background-image: url('../img/cloud2.png');
+    background-image: url('../img/cloud.png');
   }
 
   to {
@@ -111,4 +121,11 @@ button:hover {
     bottom: 125vh;
     background-image:none;
   }
+}
+
+#neighbor {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  bottom: 40px;
 }

@@ -75,6 +75,10 @@ Test: "It should return an array from 0 to the inputted number with correct repl
 Code: beepBoop(5);
 Expected Output: 0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5
 
+Test: "It should return an array from 0 to the inputted number with correct replacements and name"
+Code: beepBoop(5, "Anastasiia");
+Expected Output: 0, "Beep!", "Boop", "Won't you be my neighbor, Anastasiia?", 4, 5
+
 ## Game Instructions
 
 1. 
