@@ -25,6 +25,8 @@ $(document).ready(function(){
     $('#cloud-form').show();
     $('button#start').hide();
     $('#cloud-result').hide();
+    $('#number').val('');
+    $('#name').val('');
   });
 
   $('form#form').submit(function(event) {
@@ -36,7 +38,9 @@ $(document).ready(function(){
     $('button#start').show();
     
     const number = $('#number').val();
-    beepBoop(number).forEach(function(number, index) {
+    const name = $('#name').val();
+
+    beepBoop(number, name).forEach(function(number, index) {
       setTimeout(function(){
         $('ul#result').append('<li>' + number + '</li>');
       }, index * 1200);
