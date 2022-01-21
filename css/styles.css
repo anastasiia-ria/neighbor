@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../img/neighborhood.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #c2e7fa;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+input{
+  display: block;
+  width: 200px;
+  margin: 15px auto;
+  padding: 10px;
+  background-color:#c2e7fa;;
+  border: 2px solid white;
+  border-radius: 5px;
+}
