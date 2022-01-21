@@ -71,13 +71,6 @@ Test: "It should return "Won't you be my neighbor?" if the number 13 is inputted
 Code: beepBoop(13);
 Expected Output: "Won't you be my neighbor?"
 
-Test: "It should return "Boop!" if the number 21 is inputted"
-Code: beepBoop(21);
-Expected Output: "Boop!"
-
-Test: "It should return "Won't you be my neighbor?" if the number 32 is inputted"
-Code: beepBoop(13);
-Expected Output: "Won't you be my neighbor?"
 ## Game Instructions
 
 1. 
