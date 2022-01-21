@@ -24,13 +24,10 @@ body {
   padding: 100px 200px 75px;
 }
 
-.left {
+.cloud {
   position: absolute;
   left: 0;
   top: 20px;
-}
-
-.cloud {
   text-align: center;
   background-image: url('../img/cloud.png');
   background-size: contain;
@@ -114,10 +111,6 @@ button:hover {
   animation: cloud 4s linear;
   background-image:none;
 }
-
-
-
-
 
 #neighbor {
   position: absolute;
