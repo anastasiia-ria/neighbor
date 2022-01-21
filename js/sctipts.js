@@ -5,15 +5,15 @@ function beepBoop(input) {
   const array = [];
 
   for (let i = 0; i <= number; i++) {
-    array.push(i)
-  }
-
-  if (number.toString().includes(3)) {
-  	number = "Won't you be my neighbor?";
-  } else if (number.toString().includes(2)) {
-    number = "Boop!";
-  } else if (number.toString().includes(1)) {
-    number = "Beep!";
+    if (i.toString().includes(3)) {
+      array.push("Won't you be my neighbor?");
+    } else if (i.toString().includes(2)) {
+      array.push("Boop!");
+    } else if (i.toString().includes(1)) {
+      array.push("Beep!");
+    } else {
+      array.push(i)
+    }
   }
 
   return array;

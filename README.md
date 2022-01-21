@@ -71,6 +71,10 @@ Test: "It should return "Won't you be my neighbor?" if the number 13 is inputted
 Code: beepBoop(13);
 Expected Output: "Won't you be my neighbor?"
 
+Test: "It should return an array from 0 to the inputted number with correct replacements"
+Code: beepBoop(5);
+Expected Output: 0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5
+
 ## Game Instructions
 
 1. 
