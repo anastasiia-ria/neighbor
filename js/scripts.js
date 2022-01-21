@@ -28,10 +28,17 @@ $(document).ready(function(){
     //Start form and clear previous results
     $('#cloud-form').show();
     $('button#start').hide();
+    $('.clear').hide();
     $('#result').hide();
     $('#result').empty();
     //Stop cloud animation
     $('.cloud').removeClass('shake');
+  });
+
+  $('button#clear').click(function (event) {
+    event.preventDefault();
+    $('#result').empty();
+    $('#result').hide();
   });
 
   $('form#form').submit(function(event) {
@@ -40,6 +47,7 @@ $(document).ready(function(){
     $('#cloud-form').hide();
     $('#result').show();
     $('button#start').show();
+    $('.clear').show();
     $('.cloud').addClass('shake');
     //Save input
     const number = $('#number').val();

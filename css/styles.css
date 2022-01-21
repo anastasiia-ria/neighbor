@@ -112,6 +112,15 @@ input {
 	background-image: none;
 }
 
+.clear {
+  padding: 50px;
+  position: absolute;
+  left: 200px;
+  top: 75px;
+  animation-delay: 0.75s;
+  display: none;
+}
+
 #neighbor {
 	position: absolute;
 	bottom: 0;
