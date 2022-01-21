@@ -1,8 +1,10 @@
 // Business Logic
 
 function beepBoop(input) {
-	const number = parseInt(input);
-  if (number === 0) {
-  	return 0;
+	let number = parseInt(input);
+  if (number === 1) {
+  	number = "Beep!";
   }
+
+  return number;
 }
