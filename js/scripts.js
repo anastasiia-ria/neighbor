@@ -48,7 +48,7 @@ $(document).ready(function(){
     beepBoop(number, name).forEach(function(number, index) {
       setTimeout(function(){
         $('ul#result').append('<li>' + number + '</li>');
-      }, index * 1200);
+      }, index * 800);
     });
   });
 })

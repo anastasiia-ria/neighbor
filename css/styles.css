@@ -1,159 +1,159 @@
 body {
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  background-image: url('../img/neighborhood.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #c2e7fa;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color: #c2e7fa;
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/neighborhood.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #c2e7fa;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #c2e7fa;
 }
 
 .container {
-  width: 900px;
-  margin: auto;
-  position: relative;
-  height: 100vh;
-}
-
-#cloud-form {
-  display: none;
-  max-width: 500px;
-  padding: 100px 200px 75px;
+	width: 900px;
+	margin: auto;
+	position: relative;
+	height: 100vh;
 }
 
 .cloud {
-  position: absolute;
-  left: 0;
-  top: 20px;
-  text-align: center;
-  background-image: url('../img/cloud.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	text-align: center;
+	background-image: url("../img/cloud.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .shake {
-  animation: shake 1.5s infinite;
+	animation: shake 1.5s infinite;
 }
 
 .shake:hover {
-  animation: none;
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.form-group {
-  width: 250px;
-}
-
-input {
-  display: block;
-  margin: 15px auto;
-  padding: 10px;
-  background-color:#c2e7fa;;
-  border: 2px solid white;
-  border-radius: 5px;
-  color: white;
+	animation: none;
 }
 
 button {
-  display: block;
-  padding: 10px 20px;
-  background-color:white;;
-  border: 2px solid #c2e7fa;
-  border-radius: 5px;
-  color: #c2e7fa;
-  text-transform: uppercase;
-  font-size: 15px;
-  cursor: pointer;
+	display: block;
+	padding: 10px 20px;
+	background-color: white;
+	border: 2px solid #c2e7fa;
+	border-radius: 5px;
+	color: #c2e7fa;
+	text-transform: uppercase;
+	font-size: 15px;
+	cursor: pointer;
 }
 
 button:hover {
-  background-color:#c2e7fa;;
-  color: white;
-  border: 2px solid white;
+	background-color: #c2e7fa;
+	color: white;
+	border: 2px solid white;
 }
 
 #start {
-  margin: 50px;
+	margin: 50px;
+}
+
+#cloud-form {
+	display: none;
+	max-width: 500px;
+	padding: 100px 200px 75px;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.form-group {
+	width: 250px;
+}
+
+input {
+	display: block;
+	margin: 15px auto;
+	padding: 10px;
+	background-color: #c2e7fa;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
 }
 
 #result {
-  display: none;
-  float:right;
-  background-color: white;
-  border-radius: 20px;
-  margin: 20px 20px 0 0;
-  width: 370px;
-  padding: 0 10px;
-  z-index: 1;
+	display: none;
+	float: right;
+	background-color: white;
+	border-radius: 20px;
+	margin: 20px 20px 0 0;
+	width: 370px;
+	padding: 0 10px;
+	z-index: 1;
 }
 
 #result li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image: url('../img/cloud.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 5px 10px;
-  margin: 2px;
-  list-style:none;
-  animation: cloud 4s linear;
-  background-image:none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url("../img/cloud.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 5px 10px;
+	margin: 2px;
+	list-style: none;
+	animation: cloud 4s linear;
+	background-image: none;
 }
 
 #neighbor {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  bottom: 90px;
-  cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	bottom: 90px;
+	cursor: pointer;
 }
 
 #neighbor:hover {
-  animation: shake 1.5s infinite;
+	animation: shake 1.5s infinite;
 }
 
 #attribution {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
 }
 
 #attribution a {
-  color: #D9E8ED; 
-  text-decoration: none;
-  font-size: 10px;
+	color: #d9e8ed;
+	text-decoration: none;
+	font-size: 10px;
 }
 
 /* Animations */
 @keyframes cloud {
-  from {
-    position: absolute;
-    bottom: 265px;
-    left: 20px;
-    width:200px;
-    height: 110px;
-    border: none;
-    background-image: url('../img/cloud.png');
-    z-index: -1;
-  }
+	from {
+		position: absolute;
+		bottom: 265px;
+		left: 20px;
+		width: 200px;
+		height: 110px;
+		border: none;
+		background-image: url("../img/cloud.png");
+		z-index: -1;
+	}
 
-  to {
-    left: 90%;
-    bottom: 105vh;
-    background-image:none;
-  }
+	to {
+		left: 95%;
+		bottom: 130%;
+		background-image: none;
+	}
 }
 
 @keyframes shake {
