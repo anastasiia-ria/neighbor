@@ -7,12 +7,18 @@ body {
   background-position: bottom;
   background-color: #c2e7fa;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #c2e7fa;
 }
 
 .container {
   max-width: 500px;
   margin: auto;
   text-align: center;
+  background-image: url('../img/cloud2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 200px 75px;
 }
 
 input{
@@ -21,6 +27,24 @@ input{
   margin: 15px auto;
   padding: 10px;
   background-color:#c2e7fa;;
-  border: 2px solid white;
+  border: 2px solid #D9E8ED;
   border-radius: 5px;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  background-color:white;;
+  border: 2px solid #c2e7fa;
+  border-radius: 5px;
+  color: #c2e7fa;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#c2e7fa;;
+  color: white;
+  border: 2px solid white;
 }
