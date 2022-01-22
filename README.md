@@ -1,4 +1,6 @@
-# Mr. Roboger's Neighborhood
+# Mr. Roboger's 
+
+
 
 #### By Anastasiia Riabets
 
@@ -16,7 +18,7 @@ Mr. Roboger's Neighborhood application takes a number from a user and returns a 
 
 ## Setup/Installation Requirements
 
-* Click on or copy and paste this [GitHub Page](https://anastasiia-ria.github.io/neighborhood/) into your preferred browser:<br>https://anastasiia-ria.github.io/neighborhood/
+* Click on or copy and paste this [GitHub Page](https://anastasiia-ria.github.io/neighbor/) into your preferred browser:<br>https://anastasiia-ria.github.io/neighbor/
 
   ***OR***
 
@@ -25,15 +27,15 @@ Mr. Roboger's Neighborhood application takes a number from a user and returns a 
   2. Once GIT is installed, clone this repository by typing following commands in your browser:
       ```
       $ cd ~/Desktop
-      $ git clone https://github.com/anastasiia-ria/neighborhood.git
+      $ git clone https://github.com/anastasiia-ria/neighbor.git
       ```
   3. Open index.html by typing following command: 
       ```
-      $ open ~/Desktop/neighborhood/index.html
+      $ open ~/Desktop/neighbor/index.html
       ```
       ***OR***
 
-      Open "neighborhood" folder on your desktop and open "index.html" file in your browser.
+      Open "neighbor" folder on your desktop and open "index.html" file in your browser.
 
 ## Specifications
 
