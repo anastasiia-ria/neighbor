@@ -81,11 +81,16 @@ Expected Output: 0, "Beep!", "Boop", "Won't you be my neighbor, Anastasiia?", 4,
 
 ## Game Instructions
 
-1. 
- 
+1. Click "Start" to start the game
+2. Enter your name and number
+3. See your results
+4. (Optional) Click "Clear" to clear results
+5. Click "Start" to start over
+6. (Optional) Click on the neighbor to see animation
 ## Known Bugs
 
-* 
+* Layout is not adjusted for small screens
+* Layout is not well adjusted for inputs larger than 25
 
 ## License
 
