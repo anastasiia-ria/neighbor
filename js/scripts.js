@@ -35,12 +35,17 @@ $(document).ready(function(){
     $('.cloud').removeClass('shake');
   });
 
-  $('button#clear').click(function (event) {
-    event.preventDefault();
+  //Clear results button
+  $('button#clear').click(function () {
     $('#result').empty();
     $('#result').hide();
+    $('.clear').hide();
   });
 
+  //Neighbor animation
+  $('#neighbor').click(function () {
+    $('#hello').toggle();
+  })
   $('form#form').submit(function(event) {
     event.preventDefault();
     //Show results
