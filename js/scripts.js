@@ -5,15 +5,17 @@ function beepBoop(input, name) {
   const array = [];
 
   for (let i = 0; i <= number; i++) {
+    let output = 0;
     if (i.toString().includes(3)) {
-      array.push("Won't you be my neighbor, " + name + "?");
+      output = "Won't you be my neighbor, " + name + '?';
     } else if (i.toString().includes(2)) {
-      array.push("Boop!");
+      output = 'Boop!';
     } else if (i.toString().includes(1)) {
-      array.push("Beep!");
+      output = 'Beep!';
     } else {
-      array.push(i)
+      output = i;
     }
+    array.push(output);
   }
   return array;
 }
@@ -45,7 +47,9 @@ $(document).ready(function(){
   //Neighbor animation
   $('#neighbor').click(function () {
     $('#hello').toggle();
-  })
+  });
+
+  //Form submit button
   $('form#form').submit(function(event) {
     event.preventDefault();
     //Show results
@@ -64,4 +68,4 @@ $(document).ready(function(){
       }, index * 800);
     });
   });
-})
+});
