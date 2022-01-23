@@ -1,6 +1,4 @@
-# Mr. Roboger's 
-
-
+# Mr. Roboger's Neighborhood
 
 #### By Anastasiia Riabets
 
@@ -11,10 +9,11 @@
 * CSS
 * HTML
 * JavaScript
+* jQuery
 
 ## Description
 
-Mr. Roboger's Neighborhood application takes a number from a user and returns a range of numbers from 0 to the user inputted number with substitions: "Beep," "Boop," and "Won't you be my neighbor?" instead of 1, 2, and 3 respectivly.
+Mr. Roboger's Neighborhood application takes a number from a user and returns a range of numbers from 0 to the user inputted number with substitions: 'Beep,' 'Boop,' and 'Won't you be my neighbor, [name]?' instead of 1, 2, and 3 respectivly.
 
 ## Setup/Installation Requirements
 
@@ -41,13 +40,13 @@ Mr. Roboger's Neighborhood application takes a number from a user and returns a 
 
 Describe: beepBoop()
 
-Test: "It should return an array with a 0 if the number 0 is inputted"
-Code: beepBoop(0);
-Expected Output: 0
+Test: "It should return an array with a 0 if the number 0 is inputted"  
+Code: beepBoop(0);  
+Expected Output: 0  
 
-Test: "It should return "Beep!" if the number 1 is inputted"
-Code: beepBoop(1);
-Expected Output: "Beep!"
+Test: "It should return an array [0, 'Beep!'] if the number 1 is inputted"  
+Code: beepBoop(1);  
+Expected Output: 0, 'Beep!'  
 
 Test: "It should return "Boop!" if the number 2 is inputted"
 Code: beepBoop(2);
