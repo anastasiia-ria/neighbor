@@ -89,6 +89,7 @@ Expected Output: 0, 'Beep!', 'Boop', 'Won't you be my neighbor, Anastasiia?', 4,
 
 * Layout is not adjusted for small screens
 * Layout is not well adjusted for inputs larger than 25
+* Does not stop appending list items when interrupted (clicked "Clear" or "Start"). Results are hidden, but might appear after game resubmission. 
 
 ## License
 
