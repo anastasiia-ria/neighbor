@@ -72,13 +72,9 @@ Test: "It should replace number that contains 2 AND 3 with 'Won't you be my neig
 Code: beepBoop(23);  
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Boop!', 'Boop!', 'Boop!', 'Won't you be my neighbor, undefined?'
 
-Test: "It should return an array from 0 to the inputted number with correct replacements"
-Code: beepBoop(5);
-Expected Output: 0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5
-
 Test: "It should return an array from 0 to the inputted number with correct replacements and name"
-Code: beepBoop(5, "Anastasiia");
-Expected Output: 0, "Beep!", "Boop", "Won't you be my neighbor, Anastasiia?", 4, 5
+Code: beepBoop(5, 'Anastasiia');
+Expected Output: 0, 'Beep!', 'Boop', 'Won't you be my neighbor, Anastasiia?', 4, 5
 
 ## Game Instructions
 
@@ -88,6 +84,7 @@ Expected Output: 0, "Beep!", "Boop", "Won't you be my neighbor, Anastasiia?", 4,
 4. (Optional) Click "Clear" to clear results
 5. Click "Start" to start over
 6. (Optional) Click on the neighbor to see animation
+
 ## Known Bugs
 
 * Layout is not adjusted for small screens
