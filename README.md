@@ -52,9 +52,9 @@ Test: "It should return an array [0, 'Beep!', 'Boop!'] if the number 2 is inputt
 Code: beepBoop(2);  
 Expected Output: 0, 'Beep!', 'Boop!'
 
-Test: "It should return "Won't you be my neighbor?" if the number 3 is inputted"
-Code: beepBoop(3);
-Expected Output: "Won't you be my neighbor?"
+Test: "It should return an array [0, 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?'] if the number 3 is inputted"  
+Code: beepBoop(3);  
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?'
 
 Test: "It should return "Beep!" if inputted number contains 1"
 Code: beepBoop(51);
