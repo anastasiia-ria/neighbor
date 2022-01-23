@@ -64,9 +64,9 @@ Test: "It should replace the number that contains 2 with 'Boop!'"
 Code: beepBoop(12);  
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!'
 
-Test: "It should return "Won't you be my neighbor?" if inputted number contains 3"
-Code: beepBoop(53);
-Expected Output: "Won't you be my neighbor?"
+Test: "It should replace the number that contains 3 with 'Won't you be my neighbor?'"  
+Code: beepBoop(13);  
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?'
 
 Test: "It should return "Won't you be my neighbor?" if the number 13 is inputted"
 Code: beepBoop(13);
