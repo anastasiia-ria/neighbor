@@ -60,9 +60,9 @@ Test: "It should replace the number that contains 1 with 'Beep!'"
 Code: beepBoop(10);  
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?', 4, 5, 6, 7, 8, 9, 'Beep!'"
 
-Test: "It should return "Boop!" if inputted number contains 2"
-Code: beepBoop(52);
-Expected Output: "Boop!"
+Test: "It should replace the number that contains 2 with 'Boop!'"  
+Code: beepBoop(12);  
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, undefined?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!'
 
 Test: "It should return "Won't you be my neighbor?" if inputted number contains 3"
 Code: beepBoop(53);
